@@ -1,0 +1,251 @@
+:root {
+	--negro: #000;
+	--blanco: hsl(0, 0%, 100%);
+	--gris: hsl(0, 0%, 55%);
+	--grisOscuro: hsl(0, 0%, 41%);
+	/* Tipografía */
+	--tipo-principal: 'Alata', sans-serif;
+	--tipo-secundaria: 'Josefin sans';
+	}
+
+body{
+  font-family: 'Alata', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;  
+}
+
+.header{
+  background-image: url(/img/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.contenedor{
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navegacion__menu{
+  display: none;
+}
+
+.logo{
+  width: 13rem;
+}
+
+.menu-hamburguesa{
+  cursor: pointer;
+  width: 2.3rem;
+}
+
+.header__titulo{
+  color: var(--blanco);
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  line-height: 1.1;
+  margin-top: 15rem;
+  border: 3px solid var(--blanco);
+  padding: 1rem;
+}
+
+
+/* MAIN */
+
+/* SECCION VR */
+.main{
+  margin-top: 5rem;
+}
+
+.contenido__vr img{
+  width: 100%;
+  height: 340px;
+}
+
+.subtitulo{
+  margin: 4rem 0 3rem 0;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  padding: 1rem;
+
+}
+
+.contenido__vr p{
+  text-align: center;
+  color: var(--grisOscuro);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  padding: 0 2rem;
+  margin-top: .5rem;
+  margin-bottom: 5.5rem;
+}
+
+
+/* SECCION CREATIONS */
+.contenido__img img{
+  width: 100%;
+  height: 180px;
+}
+
+.texto__img{
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1;
+  transform: translateY(-100px);
+  color: var(--blanco);
+  padding-left: 2rem;
+}
+
+.btn{
+  font-family: var(	--tipo-principal);
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  border: 1px solid var(--negro);
+  padding: 1rem 4rem;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background-color: var(--negro);
+  color: var(--blanco);
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+/* FOOTER */
+.footer{
+  background-color: var(--negro);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--blanco);
+}
+
+.contenido__footer a{
+  width: 13rem;
+  padding-top: 5rem;
+  margin: 0 auto;
+}
+
+.navegacion__footer{
+  margin-bottom: 4rem;
+}
+
+.navegacion__footer ul li a{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.redes__sociales{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.redes__sociales img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.copy{
+  text-align: center;
+  color: var(--gris);
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1400px) {
+  .header__titulo{
+    width: 50%;
+    font-size: 5rem;
+  }
+  .navegacion__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.7rem;
+    color: var(--blanco);
+    font-weight: 700;
+  }
+  .menu-hamburguesa{
+    display: none;
+  }
+
+  .contenido__vr img {
+    width: 60%;
+    height: 100%;
+  }
+  .textos__vr{
+    width: 50%;
+    background-color: var(--blanco);
+    transform: translatey(-100%);
+    margin-left: 630px;
+    padding: 1rem;
+    height: 250px;
+  }
+  .main .subtitulo{
+    font-size: 4rem;
+  }
+  .contenido__vr p{
+    text-align: start;
+    font-size: 1.5rem;
+  }
+  .subtitulo{
+    margin: 2rem 0 2rem 0;
+    text-align: start;
+  }
+
+  .creations__imagenes{
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1rem;
+    margin-bottom: 4rem;
+  }
+  .contenido__img img{
+    height: 100%;
+  }
+  .btn{
+    display: flex;
+    align-content: flex-end;
+  }
+  .navegacion__footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .copy{
+    font-size: 1.7rem;
+  }
+
+
+}
+
+
+
+
+
+
+
