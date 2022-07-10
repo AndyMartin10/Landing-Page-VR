@@ -1,6 +1,9 @@
 # Landing-Page-VR
 Realizado con HMTL y CSS
 
+## VER EJEMPLO
+https://silly-haupia-4de2d0.netlify.app/
+
 # Front-end Style Guide
 
 ## Layout
@@ -17,3 +20,5 @@ The designs were created to the following widths:
 
 - Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 - Weight: 300
+
+
